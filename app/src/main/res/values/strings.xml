@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">WhatsAppCode</string>
+    <string name="phone_input">Enter phone number</string>
+    <string name="code_input">Enter code</string>
+    <string name="send_button">Send Notification</string>
+    <string name="lgon_button">Logot</string>
+    <string name="lgin_button">SignIn</string>
+</resources>
