@@ -10,7 +10,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class MainPageActivity extends AppCompatActivity {
 
-    private Button btn_lgt;
+    private Button btn_lgt, btn_findUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +18,7 @@ public class MainPageActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main_page);
 
         btn_lgt = findViewById(R.id.btn_lgt);
+        btn_findUser = findViewById(R.id.btn_findUser);
 
         btn_lgt.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -35,6 +36,14 @@ public class MainPageActivity extends AppCompatActivity {
                 finish();
                 return;
                 // TODO
+            }
+        });
+
+        btn_findUser.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), FindUserActivity.class));
+
             }
         });
     }

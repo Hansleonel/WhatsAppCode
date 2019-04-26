@@ -5,4 +5,7 @@
     <string name="send_button">Send Notification</string>
     <string name="lgon_button">Logot</string>
     <string name="lgin_button">SignIn</string>
+    <string name="find_button">Find User</string>
+    <string name="phone_textView">Phone number</string>
+    <string name="name_textView">Name user</string>
 </resources>

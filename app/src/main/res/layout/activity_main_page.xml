@@ -6,10 +6,23 @@
     android:layout_height="match_parent"
     tools:context=".MainPageActivity">
 
-    <Button
-        android:id="@+id/btn_lgt"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/lgon_button"/>
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_findUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lgon_button" />
+
+        <Button
+            android:id="@+id/btn_lgt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/find_button" />
+
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
