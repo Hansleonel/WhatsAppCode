@@ -1,6 +1,10 @@
 package com.firebase.whatsappcode.codehans.whatsappcode;
 
+import android.Manifest;
 import android.content.Intent;
+import android.database.Cursor;
+import android.os.Build;
+import android.provider.ContactsContract;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -46,5 +50,19 @@ public class MainPageActivity extends AppCompatActivity {
 
             }
         });
+
+        // TODO Metodo para obtener permisos del telephone
+        obtenerPermisos();
+    }
+
+    // TODO este metodo nos permite obtener permisos para la lectura y escritura de la lista de
+    // TODO contactos del telephone
+    private void obtenerPermisos() {
+        // TODO esta condicion se da para verificar la version del telephone en caso sea mayor a la version
+        // TODO Mashmellow se necesitaran pedir los permisos expresamente al usuario
+        // TODO Mashmellow en caso sea M or above no se necesitaran expresamente
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            requestPermissions(new String[]{Manifest.permission.WRITE_CONTACTS, Manifest.permission.READ_CONTACTS}, 1);
+        }
     }
 }
