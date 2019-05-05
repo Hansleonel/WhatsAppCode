@@ -33,6 +33,8 @@ public class UserListAdapter extends RecyclerView.Adapter<UserListAdapter.UserLi
 
     @Override
     public void onBindViewHolder(@NonNull UserListViewHolder holder, int position) {
+        // TODO CON EL HOLDER PODEMOS INSERTAR LOS VALORES DE NUESTRO OBJETO
+        // TODO POR CADA POSICION ITEM EN EL RECYCLERVIEW
         holder.tv_nombre.setText(userList.get(position).getName());
         holder.tv_phone.setText(userList.get(position).getPhone());
     }

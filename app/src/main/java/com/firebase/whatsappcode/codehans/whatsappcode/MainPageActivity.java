@@ -43,6 +43,8 @@ public class MainPageActivity extends AppCompatActivity {
             }
         });
 
+        // TODO cuando le demos click a este button nos dirigira a la activity FindUserActivity
+        // TODO en dicha actividad obtendremos todos los contactos y los mostraremos
         btn_findUser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

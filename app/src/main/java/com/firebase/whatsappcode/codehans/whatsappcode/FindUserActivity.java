@@ -13,6 +13,8 @@ import java.util.ArrayList;
 public class FindUserActivity extends AppCompatActivity {
 
     private RecyclerView rv_UserList;
+    // TODO como vemos creamos un Recycler.Adapter que parece no ser del tipo
+    // TODO UserListAdpater, es en el metodo inicializarRecyclerVIew donde lo instanciamos como tal
     private RecyclerView.Adapter rv_UserList_Adapter;
     private RecyclerView.LayoutManager rv_UserList_LayoutManager;
 
@@ -45,9 +47,13 @@ public class FindUserActivity extends AppCompatActivity {
             // TODO agregando a la lista cada nombre y telephone obtenido del cursor
             UserObject contacto = new UserObject(nombreContact, phoneContact);
             contactosList.add(contacto);
-
+            // TODO por ahora notificamos al adaptador dentro del while que se
+            // TODO agregaron objetos al array contactosList por consiguiente se agregaron items
+            // TODO al recyclerView
+            // TODO aunque podria darse dicha actualziacion fuera de este
             rv_UserList_Adapter.notifyDataSetChanged();
         }
+        //rv_UserList_Adapter.notifyDataSetChanged();
     }
 
     private void inicializarRecyclerVIew() {

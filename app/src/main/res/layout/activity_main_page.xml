@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainPageActivity">
 
     <LinearLayout
@@ -12,17 +13,17 @@
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/btn_findUser"
+            android:id="@+id/btn_lgt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/lgon_button" />
 
         <Button
-            android:id="@+id/btn_lgt"
+            android:id="@+id/btn_findUser"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/find_button" />
 
     </LinearLayout>
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>
